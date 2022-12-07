@@ -84,21 +84,17 @@ public class forManager implements CommandExecutor {
         return inv;
     }
 
-    private List<String> regex(String p,String input){
+    private List<String> regex(String p,String input) {
         List<String> result = new ArrayList<>();
         Pattern pattern = Pattern.compile(p);
         Matcher matcher = pattern.matcher(input);
-        while(matcher.find()){
+        while (matcher.find()) {
             result.add(matcher.group());
         }
-        if(result.size()==0){
+        if (result.size() == 0) {
             return null;
-        }else{
+        } else {
             return result;
         }
-    }
-
-    private void sendProcess(Player player,ItemStack item){
-        //
     }
 }
