@@ -1,16 +1,12 @@
 package com.github.sakakiaruka.itemtransfer.itemtransfer.listener;
 
 import com.github.sakakiaruka.itemtransfer.itemtransfer.somethingelse.MessageUtil;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.block.Container;
 import org.bukkit.block.ShulkerBox;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.Shulker;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -18,7 +14,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.material.MaterialData;
 
 import static com.github.sakakiaruka.itemtransfer.itemtransfer.manager.forManager.opening;
 

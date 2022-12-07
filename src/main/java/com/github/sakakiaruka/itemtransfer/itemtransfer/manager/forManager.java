@@ -2,9 +2,7 @@ package com.github.sakakiaruka.itemtransfer.itemtransfer.manager;
 
 import com.github.sakakiaruka.itemtransfer.itemtransfer.somethingelse.MessageUtil;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.block.BlockFace;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
