@@ -34,7 +34,7 @@ public class forManager implements CommandExecutor {
                 return false;
             }
             if(p.isInWater() || p.getLocation().getBlock().isLiquid()){
-                new MessageUtil().warn("The destination condition is bad to receive items. This request was cancelled.");
+                player.sendMessage(new MessageUtil().warn("The destination condition is bad to receive items. This request was cancelled."));
                 return false;
             }
             p.getWorld().dropItem(p.getLocation(),item);

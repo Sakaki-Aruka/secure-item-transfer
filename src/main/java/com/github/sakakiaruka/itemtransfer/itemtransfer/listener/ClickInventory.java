@@ -31,6 +31,7 @@ public class ClickInventory implements Listener {
                 World world = player.getWorld();
                 world.dropItem(location,stack);
                 new MessageUtil().info("The item that zipped was dropped.");
+                opening.remove(player);
                 return;
             }
 
