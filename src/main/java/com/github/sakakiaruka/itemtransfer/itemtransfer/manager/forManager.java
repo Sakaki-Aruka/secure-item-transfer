@@ -12,10 +12,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class forManager implements CommandExecutor {
     public static List<Player> opening;
@@ -53,8 +50,6 @@ public class forManager implements CommandExecutor {
             return "zip";
         }else if(arg.equalsIgnoreCase("send")){
             return "send";
-        }else if(regex("\\d{1,2}",arg)!=null && Integer.valueOf(regex("\\d{1,2}",arg).get(0)) < 36){
-            return "slot";
         }else{
             return null;
         }
@@ -82,19 +77,5 @@ public class forManager implements CommandExecutor {
         inv.setItem(44,item);
         opening.add(player);
         return inv;
-    }
-
-    private List<String> regex(String p,String input) {
-        List<String> result = new ArrayList<>();
-        Pattern pattern = Pattern.compile(p);
-        Matcher matcher = pattern.matcher(input);
-        while (matcher.find()) {
-            result.add(matcher.group());
-        }
-        if (result.size() == 0) {
-            return null;
-        } else {
-            return result;
-        }
     }
 }
