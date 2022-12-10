@@ -4,3 +4,10 @@ main: com.github.sakakiaruka.itemtransfer.itemtransfer.ItemTransfer
 api-version: 1.19
 authors: [ SakakiAruka ]
 description: can send items.
+commands:
+  for:
+    permission: itemtransfer.for
+
+permissions:
+  for:
+    default: true
